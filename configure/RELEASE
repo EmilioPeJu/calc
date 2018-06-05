@@ -3,21 +3,21 @@
 # top directory each time this file is changed.
 
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
-
-SUPPORT=/home/oxygen/MOONEY/epics/synAppsSVN/support
+#WORK=/dls_sw/work/R3.14.12.3/support
+#SUPPORT=/dls_sw/prod/R3.14.12.3/support
 -include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
 
 # Need SSCAN module only to build the swait record (recDynLink library)
 # If you comment this definition out, the module will just decline to
 # build the swait record.
-SSCAN=$(SUPPORT)/sscan-2-9
+#SSCAN=$(SUPPORT)/sscan-2-9
 
 # Need SNCSEQ module only to build editSseq.st.  If you comment this
 # definition out, the module will just decline to build editSseq.st.
-SNCSEQ=$(SUPPORT)/seq-2-1-16
+#SNCSEQ=$(SUPPORT)/seq-2-1-16
 
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE=/home/oxygen/MOONEY/epics/bazaar/base-3.14
+EPICS_BASE=/dls_sw/epics/R3.14.12.3/base
 -include $(TOP)/../configure/EPICS_BASE.$(EPICS_HOST_ARCH)
 
 #Capfast users may need the following definitions
