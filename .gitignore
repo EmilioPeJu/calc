@@ -8,10 +8,11 @@ dbd/
 html/
 include/
 lib/
+documentation/doxygen/
 templates/
 cdCommands
 envPaths
 dllPath.bat
 auto_settings.sav*
 auto_positions.sav*
-
+iocs/test1/
